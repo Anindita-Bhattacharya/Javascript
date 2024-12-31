@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html>
+<body>
+<h1><i>TIP CALCULATOR</h1>
+<h4>Enter the bill amount to calculate the total</h4>
+<h4>Bill amount</h4>
+<input type="number" id="bill">
+<h4>Tip</h4>
+<input type="number" id="tip">
+<button id="calculate" onClick="cal()">Calculate</button>
+<div id="result">0</div>
+<script>
+function cal(){
+let num1=parseFloat(document.getElementById("bill").value);
+let num2=parseFloat(document.getElementById("tip").value);
+let res=num1+num2;
+document.getElementById("result").textContent=res;
+}
+</script>
+</body>
+<html>
