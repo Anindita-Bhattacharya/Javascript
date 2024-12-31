@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<style>
+body
+{
+text-align:center;
+margin-top:250px;
+background-color:#FFFFE0;
+}
+#increase,#decrease,#reset
+{
+margin-top:10px;
+padding:10px;
+background-color:yellow;
+}
+#counter
+{
+font-size:100px;
+color:green;
+}
+</style>
+</head>
+<body>
+<div class="counter" id="counter">0</div>
+<button id="increase" onClick="add()">Increase</button>
+<button id="decrease" onClick="sub()">Decrease</button>
+<button id="reset" onClick="reset()">Reset</button>
+<script>
+let count=0;
+
+function add()
+{
+count++;
+document.getElementById("counter").textContent=count;
+}
+
+function sub()
+{
+count--;
+document.getElementById("counter").textContent=count;
+}
+
+function reset()
+{
+count=0;
+document.getElementById("counter").textContent=count;
+}
+
+
+</script>
+</body>
+</html>
