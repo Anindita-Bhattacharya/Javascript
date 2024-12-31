@@ -1,0 +1,19 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+</head>
+<body>
+<h1 id="text">CLICK ON THE BELOW BUTTON TO CHANGE THE TEXT</h1>
+<button id="click_me">Change Text</button>
+<script>
+const text_paragraph=document.getElementById("text")
+const button_click=document.getElementById("click_me")
+function changeText()
+{
+text_paragraph.textContent="Your Text has been changed"
+}
+button_click.addEventListener('click',changeText)
+</script>
+
+</body>
+</html>
