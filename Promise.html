@@ -1,0 +1,32 @@
+<html>
+<script>
+// Function that returns a promise
+function fetchData() {
+    return new Promise((resolve, reject) => {
+        // Simulate an asynchronous operation using setTimeout
+        setTimeout(() => {
+            const success = true; // Change this to false to simulate an error
+
+            if (success) {
+                // Resolve the promise with some data
+                resolve("Data fetched successfully!");
+            } else {
+                // Reject the promise with an error message
+                reject("Error fetching data.");
+            }
+        }, 2000); // Simulate a 2-second delay
+    });
+}
+
+// Using the promise
+fetchData()
+    .then(result => {
+        console.log(result); // This will log "Data fetched successfully!" if resolved
+    })
+    .catch(error => {
+        console.error(error); // This will log "Error fetching data." if rejected
+    });
+
+console.log("Fetching data..."); // This will log immediately
+</script>
+</html>
