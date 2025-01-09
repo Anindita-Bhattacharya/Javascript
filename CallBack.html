@@ -1,0 +1,20 @@
+<script>
+// Function that simulates fetching data with a delay
+function fetchData(callback) {
+    console.log("Fetching data...");
+
+    // Simulate an asynchronous operation using setTimeout
+    setTimeout(() => {
+        const data = "Data fetched successfully!"; // Simulated data
+        callback(data); // Call the callback function with the fetched data
+    }, 2000); // Simulate a 2-second delay
+}
+
+// Callback function that will be executed after data is fetched
+function displayData(data) {
+    console.log(data); // Log the fetched data
+}
+
+// Using the fetchData function with a callback
+fetchData(displayData);
+</script>
