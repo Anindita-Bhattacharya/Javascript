@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Query Selector Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .highlight {
+            color: blue;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to My Page</h1>
+    <p id="myParagraph">This is the original text.</p>
+    <button id="changeTextButton">Change Text</button>
+
+    <script>
+        // Select the button and paragraph using querySelector
+        const button = document.querySelector('#changeTextButton');
+        const paragraph = document.querySelector('#myParagraph');
+
+        // Add an event listener to the button
+        button.addEventListener('click', function() {
+            // Change the text of the paragraph
+            paragraph.textContent = "The text has been changed!";
+            // Optionally, add a class to highlight the text
+            paragraph.classList.add('highlight');
+        });
+    </script>
+</body>
+</html>
