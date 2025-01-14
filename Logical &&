@@ -1,0 +1,7 @@
+let a=true;
+let b="Anindita";
+
+console.log(a && b);
+
+//output:Anindita
+//The && operator evaluates its operands from left to right and returns the first operand that is falsy, or the last operand if all are truthy.
